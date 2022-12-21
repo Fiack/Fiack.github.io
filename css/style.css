@@ -118,34 +118,48 @@ label, #toggle {
 }
 
 @media all and (max-width: 1000px) {
-  body header nav {
-    height: 60px;
-  }
-  body header nav label {
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-  }
-  body header nav .menu {
-    display: none;
-    flex-direction: column;
-    background: #120C32;
-    height: 220px;
-  }
   body header nav .menu a {
-    width: 50%;
+    font-size: 150%;
   }
-  body article {
+  article {
     margin: auto;
     margin-top: 4em;
     margin-bottom: 4em;
   }
-  #toggle:checked + .menu {
-    display: flex;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
+/*@media all and (max-width: 1000px) {
+    body{
+        header {
+            nav{
+                height: 60px;
+                label{
+                    width: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    font-size: 40px;
+                    color: white;
+                    cursor: pointer;
+                }
+                .menu{
+                    display: none;
+                    flex-direction: column;
+                    background: #120C32;
+                    height: 220px;
+                    a{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        article{
+            margin: auto;
+            margin-top: 4em;
+            margin-bottom: 4em;
+        }
+    }
+    #toggle:checked + .menu {
+        display: flex;
+    }
+}*//*# sourceMappingURL=style.css.map */

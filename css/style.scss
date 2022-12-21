@@ -122,6 +122,26 @@ label, #toggle{
     body{
         header {
             nav{
+                .menu{
+                    a{
+                        font-size: 150%;
+                    }
+                }
+            }
+        }
+    }
+        article{
+            margin: auto;
+            margin-top: 4em;
+            margin-bottom: 4em;
+        }
+    }
+
+
+/*@media all and (max-width: 1000px) {
+    body{
+        header {
+            nav{
                 height: 60px;
                 label{
                     width: 30px;
@@ -153,5 +173,5 @@ label, #toggle{
     #toggle:checked + .menu {
         display: flex;
     }
-}
+}*/
 
