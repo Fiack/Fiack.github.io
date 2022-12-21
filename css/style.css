@@ -1,0 +1,151 @@
+html {
+  height: 100%;
+}
+
+* {
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom right, black 25%, rgba(255, 145, 0, 0.774) 50%, rgb(255, 94, 0) 75%);
+}
+body header {
+  flex-basis: 100%;
+  flex-grow: 1;
+  height: 18vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body header img {
+  height: 16vh;
+  border: solid 0.25em;
+  margin: -0.25em;
+  margin: auto;
+  border-radius: 15px;
+}
+body header nav {
+  flex-basis: 100%;
+  display: flex;
+}
+body header nav .menu {
+  flex-grow: 1;
+  margin: auto;
+  background-color: #120C32;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+  border-radius: 32px;
+  box-shadow: rgba(255, 153, 80, 0.1882352941) 0px 8px 24px;
+}
+body header nav .menu a {
+  margin: 0.7em;
+  margin-right: 3em;
+  font-size: 120%;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+body header nav .menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #FF9950;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+body header nav .menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom cen;
+}
+
+main {
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+article {
+  border: thin solid black;
+  box-shadow: 0px 0px 10px black;
+  flex-basis: 15%;
+  padding: 1.5em;
+  margin: 2em;
+  height: 50%;
+}
+article li {
+  padding: 0.5em;
+  display: flex;
+}
+article li img {
+  width: 15%;
+  height: 15%;
+}
+article li a {
+  padding-left: 1em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  flex-basis: 100%;
+  width: 100%;
+  left: 0;
+}
+footer p {
+  text-align: center;
+  border: thin solid black;
+  padding: 1em;
+}
+
+label, #toggle {
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  body header nav {
+    height: 60px;
+  }
+  body header nav label {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  body header nav .menu {
+    display: none;
+    flex-direction: column;
+    background: #120C32;
+    height: 220px;
+  }
+  body header nav .menu a {
+    width: 50%;
+  }
+  body article {
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+  #toggle:checked + .menu {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */
