@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/acceuil.css">
+    <title>Basket Club Patay</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="acceuil.html"><img src="images/bcp.png" alt="logo du basket club Patay" class="logo"></a>
+            <h1 class="titre">Basket Club Patay</h1>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="entrainements.html">Entrainements</a></li>
+                    <li><a href="pMatch.html">Prochains Matchs</a></li>
+                    <li class="active"><a href="rMatch.html">Résultats Matchs</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                </ul>
+            </div>
+            <img src="images/open.png" alt="" class="hamburger">
+            <img src="images/close.png" alt="" class="croix">
+        </nav>
+    </header>
+
+    <main>
+        test
+    </main>
+
+    <article>
+        <section>
+            <h2>Nouvelles</h2>
+            <p>
+                Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.
+            </p>
+        </section>
+        <section>
+            <h2>Réseaux sociaux</h2>
+            <ul>
+                <li><a href='https://twitter.com/ClubPatay'><img src='images/Twitter.png' alt='Image du logo twitter'></a>
+                <li><a href='https://www.instagram.com/basketclubpatay/?hl=fr'><img src='images/instagram.png' alt='Image du logo instagram'></a>
+                <li><a href='https://www.facebook.com/basket.club.patay/'><img src='images/facebook.png' alt='Image du logo facebook'></a>
+                </li>
+            </ul>
+        </section>
+    </article>
+
+    <footer>
+        <p>©2022 BCP - Basket Club Patay</p>
+    </footer>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".hamburger")
+    const navLinks = document.querySelector(".navLinks")
+    const croix = document.querySelector(".croix")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+
+    croix.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+</script>
+
+</html>
