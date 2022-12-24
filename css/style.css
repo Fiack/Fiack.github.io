@@ -128,7 +128,9 @@ article section{
     align-items: center;
 }
 
-article section h2 {}
+article p {
+    margin: 15px 0;
+}
 
 article ul {
     display: flex;
