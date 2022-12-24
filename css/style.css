@@ -27,20 +27,19 @@ header{
 .navbar{
     padding: 25px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
 }
   
-.navbar a {
+.navbar li a {
     font-size: 120%;
     position: relative;
     color: white;
     cursor: pointer;
 }
 
-.navbar a::after {
+.navbar li a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -53,7 +52,7 @@ header{
     transition: 0.25s ease-out;
 }
   
-  .navbar a:hover::after {
+  .navbar li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom cen;
 }
@@ -61,7 +60,21 @@ header{
 .navbar .logo{
     height: 14vh;
 }
-  
+
+.titre{
+    font-weight: bold;
+    color: black;
+    font-size: 3vw;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.navLinks{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .navbar .navLinks ul {
     display: flex;
 }
@@ -85,7 +98,13 @@ header{
     right: 35px;
     width: 35px;
 }
-  
+
+.croix{
+    display: none;
+    position: absolute;
+    right: 35px;
+    width: 35px;
+}
 
 
 main{
@@ -101,46 +120,73 @@ article {
     margin: 2em;
     height: 50%;
   }
-  article li {
+
+article section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article section h2 {}
+
+article ul {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+article li {
     padding: 0.5em;
     display: flex;
-  }
+}
   article li img {
-    width: 15%;
-    height: 15%;
-  }
-  article li a {
+    width: 100%;
+}
+article li a {
+    width: 2em;
     padding-left: 1em;
-  }
+}
   
-  footer {
+footer {
     position: absolute;
     bottom: 0;
     flex-basis: 100%;
     width: 100%;
     left: 0;
     z-index: 1;
-  }
-  footer p {
+}
+footer p {
     text-align: center;
     border: thin solid black;
     padding: 1em;
-  }
+}
   
-@media screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
     .navbar{
         padding: 35px;
+        justify-content: center;
     }
   
     .navbar .logo{
-        height: 14vw;
+        height: 14vw;       
     }
   
     .navbar .hamburger{
         display: block;
         z-index: 2;
     }
+
+    .navbar .hamburger.open{
+        display: none;
+    }
   
+    .navbar .croix.close{
+        display: block;
+        z-index: 2;
+    }
+
     .navLinks {
         top: 0;
         left: 0;

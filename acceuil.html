@@ -9,17 +9,19 @@
 <body>
     <header>
         <nav class="navbar">
-            <img src="images/bcp.png" alt="" class="logo">
+            <a href="acceuil.html"><img src="images/bcp.png" alt="logo du basket club Patay" class="logo"></a>
+            <h1 class="titre">Basket Club Patay</h1>
             <div class="navLinks">
                 <ul>
-                    <li class="active"><a href="Acceuil.html">Acceuil</a></li>
-                    <li><a href="Entrainements.html">Entrainements</a></li>
+                    <li class="active"><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="antrainements.html">Entrainements</a></li>
                     <li><a href="pMatchs.html">Prochains Matchs</a></li>
                     <li><a href="rMatchs.html">Résultats Matchs</a></li>
-                    <li><a href="Boutique.html">Boutique</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
                 </ul>
             </div>
-            <img src="images/hamburger.png" alt="" class="hamburger">
+            <img src="images/open.png" alt="" class="hamburger">
+            <img src="images/close.png" alt="" class="croix">
         </nav>
     </header>
 
@@ -31,21 +33,15 @@
         <section>
             <h2>Nouvelles</h2>
             <p>
-                test
+                Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt.
             </p>
         </section>
         <section>
             <h2>Réseaux sociaux</h2>
             <ul>
-                <li><img src='images/Twitter.png' alt='Image du logo twitter'><a
-                    href=''>
-                    Twitter</a>
-                </li>
-                <li><img src='images/instagram.png' alt='Image du logo instagram'><a
-                    href=''> Instagram</a></li>
-                <li><img src='images/facebook.png' alt='Image du logo facebook'><a
-                    href=''>
-                    Facebook</a>
+                <li><a href='https://twitter.com/ClubPatay'><img src='images/Twitter.png' alt='Image du logo twitter'></a>
+                <li><a href='https://www.instagram.com/basketclubpatay/?hl=fr'><img src='images/instagram.png' alt='Image du logo instagram'></a>
+                <li><a href='https://www.facebook.com/basket.club.patay/'><img src='images/facebook.png' alt='Image du logo facebook'></a>
                 </li>
             </ul>
         </section>
@@ -60,9 +56,18 @@
 <script>
     const menuHamburger = document.querySelector(".hamburger")
     const navLinks = document.querySelector(".navLinks")
+    const croix = document.querySelector(".croix")
 
     menuHamburger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+
+    croix.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
     })
 </script>
 
