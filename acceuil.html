@@ -8,45 +8,62 @@
 </head>
 <body>
     <header>
-        <img src="images/téléchargement.png" alt="Logo du basket club patay">
-        <nav>
-            <label for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <div class="menu">
-                <a href="acceuil.html">Acceuil</a>
-                <a href="entrainements.html">Entrainements</a>
-                <a href="pMatch.html">Prochain Matchs</a>
-                <a href="rMatch.html">Résultat Matchs</a>
-                <a href="boutique.html">Boutique</a>
+        <nav class="navbar">
+            <img src="images/bcp.png" alt="" class="logo">
+            <div class="navLinks">
+                <ul>
+                    <li class="active"><a href="Acceuil.html">Acceuil</a></li>
+                    <li><a href="Entrainements.html">Entrainements</a></li>
+                    <li><a href="pMatchs.html">Prochains Matchs</a></li>
+                    <li><a href="rMatchs.html">Résultats Matchs</a></li>
+                    <li><a href="Boutique.html">Boutique</a></li>
+                </ul>
             </div>
+            <img src="images/hamburger.png" alt="" class="hamburger">
         </nav>
     </header>
+
     <main>
         test
     </main>
-    <article><section>
-        <h2>Nouvelles</h2>
-        <p>
-            test
-        </p>
-    </section>
-    <section>
-        <h2>Réseaux sociaux</h2>
-        <ul>
-            <li><img src='images/Twitter.png' alt='Image du logo twitter'><a
+
+    <article>
+        <section>
+            <h2>Nouvelles</h2>
+            <p>
+                test
+            </p>
+        </section>
+        <section>
+            <h2>Réseaux sociaux</h2>
+            <ul>
+                <li><img src='images/Twitter.png' alt='Image du logo twitter'><a
                     href=''>
                     Twitter</a>
-            </li>
-            <li><img src='images/instagram.png' alt='Image du logo instagram'><a
+                </li>
+                <li><img src='images/instagram.png' alt='Image du logo instagram'><a
                     href=''> Instagram</a></li>
-            <li><img src='images/facebook.png' alt='Image du logo facebool'><a
+                <li><img src='images/facebook.png' alt='Image du logo facebook'><a
                     href=''>
                     Facebook</a>
-            </li>
-        </ul>
-    </section></article>
+                </li>
+            </ul>
+        </section>
+    </article>
+
     <footer>
         <p>©2022 BCP - Basket Club Patay</p>
     </footer>
+
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".hamburger")
+    const navLinks = document.querySelector(".navLinks")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    })
+</script>
+
 </html>
