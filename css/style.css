@@ -16,6 +16,7 @@ body{
     font-family: 'monospace';
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background: rgb(241, 142, 44);
 }
   
@@ -117,7 +118,6 @@ article {
     box-shadow: 0px 0px 10px black;
     flex-basis: 15%;
     padding: 1.5em;
-    margin: 2em;
     height: 50%;
   }
 
@@ -173,6 +173,10 @@ footer p {
 }
   
 @media all and (max-width: 1000px) {
+    article{
+        margin: 2vw;
+    }
+
     .navbar{
         padding: 35px;
         justify-content: center;

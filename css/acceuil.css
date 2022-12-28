@@ -1,0 +1,57 @@
+main>h2 {
+    text-align: center;
+    padding-top: 2vh;
+    color: red;
+    font-size: 250%;
+}
+
+main ul li:nth-child(odd){
+    box-shadow: -8px 8px 15px black;
+    }
+
+main li:nth-child(even){
+    box-shadow: 8px 8px 15px black;
+}
+
+main ul li:nth-child(even) img{
+    float: right;
+}
+
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding: 4em;
+}
+
+main li{
+    flex-basis: 80%;
+    margin-bottom: 4em;
+    flex-grow: 1;
+
+}
+
+main img{
+    float:left;
+    width: auto;
+    height: 20vh;
+    padding: 1em;
+}
+
+main p {
+    text-align: center;
+    padding: 1.5em
+}
+
+main li h2 {
+    padding-top: 2vh;
+    text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+    main img {
+        height: 20vw;
+        width: auto;
+    }
+    
+}
