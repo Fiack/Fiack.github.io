@@ -159,7 +159,7 @@ article li a {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     flex-basis: 100%;
     width: 100%;
@@ -229,4 +229,6 @@ footer p {
         margin: 25px 0;
         font-size: 1.2em;
     }
-  }
+
+    
+}
