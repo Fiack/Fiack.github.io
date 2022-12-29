@@ -1,8 +1,8 @@
 main>h2 {
     text-align: center;
     padding-top: 2vh;
-    color: red;
-    font-size: 250%;
+    color: #333;
+    font-size: 3vw;
 }
 
 main ul li:nth-child(odd){
@@ -43,7 +43,7 @@ main p {
     padding: 0.5em;
 }
 
-main li h2 {
+main li h3 {
     padding-top: 2vh;
     text-align: center;
 }
