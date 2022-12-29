@@ -155,7 +155,21 @@ footer {
     font-size: 25px;
 }
 
-@media screen and (max-width: 1000px) {
+@media all and (max-width: 800px){
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .bloc{
+        width: 300px;
+    }
+
+    .bloc:nth-child(1){
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 1000px) {
     .navbar{
         padding: 35px;
         justify-content: center;
@@ -210,16 +224,3 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px){
-    footer{
-        flex-wrap: wrap;
-    }
-
-    .bloc{
-        width: 300px;
-    }
-
-    .bloc:nth-child(1){
-        margin-bottom: 30px;
-    }
-}
