@@ -213,6 +213,14 @@ footer {
         flex-direction: column;
     }
     
+    .navbar li a {
+        color: #f1f1f1;
+    }
+
+    .navbar .navLinks ul .active a {
+        color: #333;
+    }
+
     .navbar .navLinks ul li {
         margin: 25px 0;
         font-size: 1.2em;
