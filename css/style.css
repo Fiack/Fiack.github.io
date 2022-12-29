@@ -6,7 +6,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #f1f1f1;
+    color: #f1f1f1
 }
 
 a { text-decoration: none; }
@@ -14,14 +14,15 @@ a { text-decoration: none; }
 li{ list-style: none; }
 
 body{
-    font-family: 'monospace';
+    font-family: 'Verdana';
     display: flex;
     flex-direction: column;
 }
   
 header{
     width: 100%;
-    background: linear-gradient(to bottom left, #333, rgb(194, 82, 8), #333);
+    background-color: #333;
+    border-bottom: 4px solid rgb(177, 71, 1)
 }
 
 .navbar{
@@ -35,7 +36,7 @@ header{
 .navbar li a {
     font-size: 120%;
     position: relative;
-    color: white;
+    color: #f1f1f1;
     cursor: pointer;
 }
 
@@ -47,7 +48,7 @@ header{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: rgb(194, 82, 8);
     transform-origin: bottom center;
     transition: 0.25s ease-out;
 }
@@ -63,7 +64,7 @@ header{
 
 .titre{
     font-weight: bold;
-    color: black;
+    color: rgb(194, 82, 8);
     font-size: 3vw;
     margin-left: 50px;
     margin-right: 20px;
@@ -88,7 +89,7 @@ header{
 }
 
 .navbar .navLinks ul .active a {
-    color: black;
+    color: rgb(194, 82, 8);
     font-weight: 600;
 }
   
@@ -109,7 +110,7 @@ header{
 
 main{
     flex: 1 0 auto;
-    background: linear-gradient(to bottom right,#333, rgb(194, 82, 8), #333);
+    background: linear-gradient(to bottom right,rgb(139, 109, 88), rgb(194, 82, 8), #333 105%);
 }
 
 footer {
