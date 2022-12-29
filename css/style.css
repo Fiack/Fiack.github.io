@@ -5,23 +5,22 @@ html {
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    color: white;
+    box-sizing: border-box;
 }
 
+a { text-decoration: none; }
 
+li{ list-style: none; }
 
 body{
+    background: rgb(241, 142, 44);
     font-family: 'monospace';
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: rgb(241, 142, 44);
+    flex-direction: column;
+    height: 100vh;
 }
   
 header{
-    flex-basis: 100%;
     width: 100%;
 }
 
@@ -109,74 +108,53 @@ header{
 
 
 main{
-    flex-basis: 70%;
-    flex-grow: 1;
-}
-
-article {
-    border: thin solid black;
-    box-shadow: 0px 0px 10px black;
-    flex-basis: 15%;
-    padding: 1.5em;
-    height: 50%;
-  }
-
-article h2{
-    text-align: center;
-}
-
-article p {
-    text-align: center;
-    margin: 15px 0;
-}
-
-article ul {
-    display: flex;
-    padding: 15px 0;
-    justify-content: center;
-    align-items: center;
-}
-
-article li {
-    padding: 0.5em;
-    display: flex;
-}
-  article li img {
-    width: 100%;
-}
-article li a {
-    width: 2em;
-    padding-left: 1em;
-}
-
-.contacts ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts li {
-    font-weight: 600;
+    flex: 1 0 auto;
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    flex-basis: 100%;
-    width: 100%;
-    left: 0;
-    z-index: 1;
+    background-color: #333;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
 }
-footer p {
-    text-align: center;
-    border: thin solid black;
-    padding: 1em;
-}
-  
-@media all and (max-width: 1000px) {
-    article{
-        margin: 2vw;
-    }
 
+.bloc{
+    margin: 0 50px;
+}
+
+.footerContact h3,
+.footerMedias h3 {
+    font-size: 25px;
+
+}
+
+.footerContact li {
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.listeContact,
+.listeMedias {
+    padding: 5px 0;
+}
+
+.listeMedias img {
+    width: 30px;
+    margin: 10px 10px;
+}
+
+.listeMedias a {
+    position: relative;
+    right: 10px;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
     .navbar{
         padding: 35px;
         justify-content: center;
@@ -229,6 +207,18 @@ footer p {
         margin: 25px 0;
         font-size: 1.2em;
     }
+}
 
-    
+@media screen and (max-width: 800px){
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .bloc{
+        width: 300px;
+    }
+
+    .bloc:nth-child(1){
+        margin-bottom: 30px;
+    }
 }

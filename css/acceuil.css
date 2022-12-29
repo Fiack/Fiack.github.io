@@ -40,7 +40,7 @@ main img{
 
 main p {
     text-align: center;
-    padding: 1.5em
+    padding: 0.5em;
 }
 
 main li h2 {
@@ -48,7 +48,7 @@ main li h2 {
     text-align: center;
 }
 
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     main img {
         height: 20vw;
         width: auto;
