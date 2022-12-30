@@ -129,9 +129,10 @@ footer {
     margin: 0 50px;
 }
 
-.footerContact h3,
-.footerMedias h3 {
+.footerContact h2,
+.footerMedias h2 {
     font-size: 25px;
+    color: rgb(194, 82, 8);
 
 }
 
