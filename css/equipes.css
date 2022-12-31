@@ -1,0 +1,40 @@
+main{
+    display: flex;
+}
+
+main nav {
+    background-color: #333;
+    height: 104%;
+    position: relative;
+    top: -7px;
+    width: 8vw;
+}
+
+main nav ul {
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+main nav ul li a {
+    font-size: 1.5vw;
+}
+
+.choix {
+    font-size: 400%;
+}
+
+.contenue{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

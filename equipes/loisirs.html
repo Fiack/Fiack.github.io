@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/equipes.css">
+    <title>Basket Club Patay</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../acceuil.html"><img src="../images/bcp.png" alt="logo du basket club Patay" class="logo"></a>
+            <h1 class="titre">Basket Club Patay</h1>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="../acceuil.html">Acceuil</a></li>
+                    <li class="active"><a href="../equipes.html">Equipes</a></li>
+                    <li><a href="../rMatch.html">Résultats Matchs</a></li>
+                    <li><a href="../boutique.html">Boutique</a></li>
+                </ul>
+            </div>
+            <img src="../images/open.png" alt="" class="hamburger">
+            <img src="../images/close.png" alt="" class="croix">
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="baby.html">Baby</a></li>
+                <li><a href="u9.html">U9</a></li>
+                <li><a href="u11.html">U11</a></li>
+                <li><a href="u15f.html">U15F</a></li>
+                <li><a href="u17f.html">U17F</a></li>
+                <li><a href="u17m.html">U17M</a></li>
+                <li class="active"><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="dm3.html">DM3</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+        <section class="bloc footerMedias">
+            <h2>Nos Réseaux</h2>
+            <ul class="listeMedias">
+                <li><a href='https://twitter.com/ClubPatay'><img src='../images/Twitter.png' alt='Image du logo twitter'>twitter.com/ClubPatay</a></li>
+                <li><a href='https://www.instagram.com/basketclubpatay/?hl=fr'><img src='../images/instagram.png' alt='Image du logo instagram'>instagram.com/basketclubpatay</a></li>
+                <li><a href='https://www.facebook.com/basket.club.patay/'><img src='../images/facebook.png' alt='Image du logo facebook'>facebook.com/basket.club.patay</a></li>
+            </ul>
+        </section>
+
+        <section class="bloc footerContact">
+            <h2>Nos Contacts</h2>
+            <ul class="listeContact">
+                <li><p>president.bcpatay@gmail.com
+                    <br>
+                    06.87.60.27.96</p>    
+                </li>
+                <li><p>secretaire.bcpatay@gmail.com
+                    <br>
+                    06.14.46.89.62
+                </p></li>
+                <li><p>contact.bcpatay@gmail.com</p></li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".hamburger")
+    const navLinks = document.querySelector(".navLinks")
+    const croix = document.querySelector(".croix")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+
+    croix.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobileMenu')
+    menuHamburger.classList.toggle('open')
+    croix.classList.toggle('close')
+    })
+</script>
+
+</html>
