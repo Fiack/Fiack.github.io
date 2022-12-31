@@ -14,12 +14,21 @@ main ul{
 main li{
     display: flex;
     flex-wrap: wrap;
-    margin:1em;
+    align-items: center;
     flex-basis: 40%;
     flex-grow: 1;
 }
 
-figure {
+main li:nth-child(1),
+main li:nth-child(2),
+main li:nth-child(3),
+main li:nth-child(4) {
+    margin-bottom: 80px;
+}
+
+
+
+main div {
     font-size: 150%;
     flex-basis: 100%;
     width: 30%;
@@ -28,5 +37,12 @@ figure {
     text-indent: 0;
     margin: 0.5em;
     padding: 0.5em;
-  }
+}
 
+main h2 {
+    margin-bottom: 40px;
+}
+
+main img{
+    margin-bottom: 40px ;
+}
